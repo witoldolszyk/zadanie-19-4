@@ -1,9 +1,9 @@
 import uuid from uuid;
-const boundAddComment = text => dispatch(addComment(text));
-const boundEditComment = (text, id) => dispatch(editComment(text, id));
-const boundremoveComment = id => dispatch(removeComment(id));
-const boundThumbUpComment = id => dispatch(thumbUpComment(id,));
-const boundThumbDownComment = id => dispatch(thumbDownComment(id));
+export  const boundAddComment = text => dispatch(addComment(text));
+export  const boundEditComment = (text, id) => dispatch(editComment(text, id));
+export  const boundremoveComment = id => dispatch(removeComment(id));
+export  const boundThumbUpComment = id => dispatch(thumbUpComment(id,));
+export  const boundThumbDownComment = id => dispatch(thumbDownComment(id));
 
 function addComment(text) {
   return {
